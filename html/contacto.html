@@ -3,3 +3,78 @@
 <!-- p -->
 <!-- Enlaces a index, ingredientes, pasos y contacto -->
 <!-- formulario: nombre, email, seleccionar entre consulta/sugerencia/corrección, comentario, aceptar política de privacidad, enviar-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {background-color: rgb(231, 198, 132)}
+        h1 {text-align: center; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            color: rgb(114, 57, 16);}
+        a {color: rgb(114, 57, 16);
+            font-size: 20px;}
+        h2 {color: rgb(114, 57, 16);
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        img {margin-left: 300px;
+            height: 300px;
+            border-color: rgb(114, 57, 16);
+            border-style: groove;
+            border-radius: 10px;
+            border-width: 10px;}
+        div {background-color:rgba(114, 57, 16, 0.251);
+            border-style: solid;
+            border-color: rgb(114, 57, 16);
+            border-width: 1px;}
+        p {font-size: 20px;
+            color: rgb(114, 57, 16);}
+    </style>
+
+</head>
+<body>
+    <h1> Página de contacto </h1>
+    <div>
+        <a href="./index.html">Página principal</a>
+        <a href="./ingredientes.html">Ingredientes</a>
+        <a href="./pasos.html">Pasos</a>
+    </div>
+    <p> Para contactar con la creadora de este blog, deberá rellenar el siguiente formulario: </p>
+
+    <form action="./contacto.html" method="get">
+
+        <label for="nombre">Nombre: </label><br>
+        <input type="text" id="nombre" placeholder="Escriba su nombre"><br>
+        
+        <label for="apellido"> Apellido: </label><br>
+        <input type="text" id="apellido" placeholder="Escriba su apellido"><br>
+        
+        <label for="email"> Email: </label><br>
+        <input type="email" id="email" placeholder="email@email.com"><br>
+
+        <label for="telefono"> Teléfono: </label><br>
+        <input type="tel" id="telefono" placeholder="telefono"><br>
+        <br>
+
+        <h2>Selecciona motivo</h2>
+        
+        <input type="radio" id="radio-fps" name="problema"  value="Pasos confusos">
+        <label for="radio-fps">Pasos confusos</label><br>
+        
+        <input type="radio" id="radio-fps" name="problema" value="No sé donde comprar los productos">
+        <label for="radio-fps">No sé donde comprar los productos</label><br>
+        
+        <input type="radio" id="radio-fps" name="problema" value="Otro">
+        <label for="radio-fps">Otro</label><br>
+
+        <textarea name="Escriba las otras razones" rows="10" cols="30"></textarea>
+        <br><br>
+        <button type="submit" rows="10" cols="30"> Enviar formulario</button>
+
+    </form>
+</body>
+</html>
